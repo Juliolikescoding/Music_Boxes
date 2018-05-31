@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 5vh 0vw 0vh 0vw;
+    display: flex;
+    justify-content: center;
+    background: url(https://media2.giphy.com/media/117FHDNGAJmVTG/giphy-preview.gif); /*1st*/
+    font-family: 'Berkshire Swash', cursive; /*2nd*/
+}
+
+.piano{
+    /* border: 1px solid black; */
+    display: flex;
+    min-width:35vw;
+    max-width: 35vw;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0); /*3rd*/
+    box-shadow:20px 20px 10px rgba(0, 0, 0, 0.514); /*10th*/
+    
+}
+
+.key{
+    flex: 1;
+    min-height: 40vh;
+    max-height: 40vh;
+    border: 1px solid black;
+}
+/* 4th */
+.black{
+    background-color: black; /* 5th */
+    color: gold;/* 6th */
+}
+/*7th*/
+.white{
+    background-color: white; /*8th*/
+    color:rgb(0, 0, 255); /*9th*/
+}
