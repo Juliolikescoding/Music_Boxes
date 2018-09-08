@@ -3,7 +3,7 @@ body{
     margin: 5vh 0vw 0vh 0vw;
     display: flex;
     justify-content: center;
-    background: url(https://media2.giphy.com/media/117FHDNGAJmVTG/giphy-preview.gif); /*1st*/
+   background:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/music-staff_b1d89oyes__F0000.png) navy; /*1st*/
     font-family: 'Berkshire Swash', cursive; /*2nd*/
 }
 
@@ -15,7 +15,7 @@ body{
     height: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0); /*3rd*/
-    box-shadow:20px 20px 10px rgba(0, 0, 0, 0.514); /*10th*/
+    box-shadow:20px 20px 10px rgba(255, 255, 255, 0.514); /*10th*/
     
 }
 
@@ -29,9 +29,14 @@ body{
 .black{
     background-color: black; /* 5th */
     color: gold;/* 6th */
+    border-right:1px solid white;
+    border-left:1px solid white;
+
 }
 /*7th*/
 .white{
     background-color: white; /*8th*/
     color:rgb(0, 0, 255); /*9th*/
+    border-left:1px solid white;
+    border-right:1px solid white;
 }

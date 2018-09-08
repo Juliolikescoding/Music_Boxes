@@ -27,7 +27,7 @@ keys.forEach(function(key){
 });
 
 document.addEventListener('keydown',function(event){
-    console.log(event.key)
+    // console.log(event.key)
     if(event.key === "a"){
         playNote("cKey")
     }
