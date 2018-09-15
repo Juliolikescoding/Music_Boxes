@@ -31,22 +31,55 @@ document.addEventListener('keydown',function(event){
     if(event.key === "a"){
         playNote("cKey")
     }
+    else if(event.key === "A"){
+        playNote("cKey")
+    }
+    //
     if(event.key === "s"){
         playNote("dKey")
     }
+    //
+    else if(event.key === "S"){
+        playNote("dKey")
+    }
+    //
     if(event.key === "d"){
         playNote("eKey")
     }
+    //
+    else if(event.key === "D"){
+        playNote("eKey")
+    }
+    //
     if(event.key === "f"){
         playNote("fKey")
     }
+
+    else if(event.key === "F"){
+        playNote("fKey")
+    }
+    
     if(event.key === "g"){
         playNote("gKey")
     }
+    else if(event.key === "G"){
+        playNote("gKey")
+    }
+    
     if(event.key === "h"){
         playNote("aKey")
     }
+
+    else if(event.key === "H"){
+        playNote("aKey")
+    }
+
     if(event.key === "j"){
         playNote("bKey")
     }
+
+    else if(event.key === "J"){
+        playNote("bKey")
+    }
+
 })

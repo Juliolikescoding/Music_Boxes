@@ -1,42 +1,108 @@
 body{
-    padding: 0;
-    margin: 5vh 0vw 0vh 0vw;
-    display: flex;
-    justify-content: center;
-   background:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/music-staff_b1d89oyes__F0000.png) navy; /*1st*/
-    font-family: 'Berkshire Swash', cursive; /*2nd*/
+    padding:0;
+    margin: 70px;
+    background-image: url('../jazz.jpg');
+    background-repeat: repeat-y;
+    background-size: 1920px 1080px;
+     
+   
 }
-
-.piano{
-    /* border: 1px solid black; */
-    display: flex;
-    min-width:35vw;
-    max-width: 35vw;
-    height: auto;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0); /*3rd*/
-    box-shadow:20px 20px 10px rgba(255, 255, 255, 0.514); /*10th*/
     
-}
 
-.key{
+  
+.piano {
+    color: #EB0107;
+    list-style-type: circle;
+    text-align: center;
+    text-shadow: -1px 1px 2px  rgb(145, 0, 5);
+    font-size: 1.5rem;
+}
+      
+  .piano,
+  .black-key {
+    vertical-align: top;
+  }
+
+
+  .key{
+    display: inline-block;
+    padding: 230px 30px 30px;
+    border: 3px inset #c9c9c0;
+    background-color: #fffff5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    box-shadow: inset -5px -9px 0px #c9c9c0F2;
+    
+    
+  }
+  
+  .key:active{
+      animation: shadow 10s;
+    
+  }
+  
+
+  .black-key {
+    display: flex;
+    background-color: #000000;
+    width: 42px;
+    height: 180.5px;
+    position: fixed;
+    top: 70px;
+    transform: translateX(20px);
+    box-shadow: -2px 6px 14px 0 #2c2c2ca8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     flex: 1;
-    min-height: 40vh;
-    max-height: 40vh;
-    border: 1px solid black;
-}
-/* 4th */
-.black{
-    background-color: black; /* 5th */
-    color: gold;/* 6th */
-    border-right:1px solid white;
-    border-left:1px solid white;
+  }
 
-}
-/*7th*/
-.white{
-    background-color: white; /*8th*/
-    color:rgb(0, 0, 255); /*9th*/
-    border-left:1px solid white;
-    border-right:1px solid white;
-}
+  .words{
+    font-family: 'Hammersmith One', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    flex-direction: column;
+    
+  }
+
+
+  @keyframes shadow{
+      from{ 
+          box-shadow: -3px 6px #47474657;
+          background-image: linear-gradient(to bottom,#fffff5,#c9c9c9FF);;
+          cursor: none;
+      }
+      to{
+          cursor: none;
+          box-shadow: 0px 0px #c9c9c0;
+
+      }
+  }
+
+  /* @keyframes light{
+      from{
+        padding: auto;
+        margin: auto;
+        width: 0rem;
+        height: 0rem;
+        background-color: red;
+        transform: scale(0);
+        position: center;
+        border-radius: 50px; 
+      }
+      to{
+        padding: auto;
+        margin: auto;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: red;
+        transform: scale(20px);
+        position: center;
+        border-radius: 50px; 
+            }
+  } */
